@@ -1,0 +1,260 @@
+
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-latin-regular.eot');
+    src: url('../fonts/play-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/play-v19-latin-regular.woff2') format('woff2'),
+        url('../fonts/play-v19-latin-regular.woff') format('woff'),
+        url('../fonts/play-v19-latin-regular.ttf') format('truetype'),
+        url('../fonts/play-v19-latin-regular.svg#Play') format('svg'); 
+}
+
+@font-face {
+    font-display: swap;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-latin-700.eot');
+    src: url('../fonts/play-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/play-v19-latin-700.woff2') format('woff2'),
+        url('../fonts/play-v19-latin-700.woff') format('woff'),
+        url('../fonts/play-v19-latin-700.ttf') format('truetype'), 
+        url('../fonts/play-v19-latin-700.svg#Play') format('svg');
+}
+        
+ 
+ @font-face {
+     font-display: swap;
+     
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/roboto-v30-latin-regular.eot');
+     src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2')
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'),
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype')
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg');
+     
+ }
+
+
+ @font-face {
+     font-display: swap;
+     
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../fonts/roboto-v30-latin-700.eot');
+     src: url('../fonts/roboto-v30-latin-700.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'),
+         url('../fonts/roboto-v30-latin-700.ttf') format('truetype'),
+         url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg');
+ }
+
+
+:root {
+    --color-primary-white: #FFFFFF;
+    --color-primary-light: #2B7FFF;
+    --color-primary-dark: #011C44;
+    --color-secondary-dark: #4A4A4A;
+    --color-secondary-light: #747272;
+    --color-secondary-blue:#011F4A;
+    --color-secondary-yellow: #FFD02B;
+    
+}
+
+/* Base */
+
+body{
+color: var(--color-primary-dark);
+font-family: 'Play' , 'Roboto' , sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.2;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+address{
+font-style: normal;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Main title */
+.main-title {
+    font-family: Play;
+    color: var(--color-primary-light);
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+/* Buttom styles */
+.buttom {
+    color: var(--color-primary-white);
+    background: var(--color-primary-light);
+    border-radius: 32px;
+    cursor: pointer;
+    border: 2px solid var(--color-primary-light);
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.buttom:hover {
+    color: var(--color-primary-dark);
+    background: var(--color-primary-white);
+    border: 2px solid var(--color-primary-light);
+}
+
+/* Link styles */
+
+.link {
+  color: var(--color-primary-dark);
+    text-decoration: none;
+
+
+}
+
+.link:hover {
+    color: var(--color-primary-light);
+    font-weight: 700;
+}
+
+/* Section about */
+.about-title {
+    font-family: 'Play' sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.about-title .accent {
+    color: var(--color-primary-light);
+    text-transform: capitalize;
+    text-align: left;
+
+}
+.about-text {
+    font-family: 'Roboto' sans-serif;
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+.about-text .accent {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* Section advantages */
+.advantages-title{
+    font-family: 'Play' sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+.advantages-title .accent {
+    color: var(--color-primary-light);
+   
+}
+
+.advantages-text {
+    color: var(--color-secondary-dark);
+    font-family: 'Roboto' sans-serif;
+    
+}
+
+/* Section procedurs */
+.procedurs-title{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+.procedurs-title .accent {
+color: var(--color-primary-light);
+}
+
+.procedurs-list {
+    color: var(--color-primary-white);
+}
+
+/* Contacts section */
+.contacts-title{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.contacts-title .accent {
+    color: var(--color-primary-light);
+}
+
+.contacts-form {
+    color: var(--color-primary-white);
+}
+
+
+.contacts-form .accent {
+    color: var(--color-primary-light);
+}
+
+footer{
+    background: #011C44;
+}
+
+/* Footter section */
+.link-footer {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-footer:hover {
+    color: var(--color-primary-light);
+}
+
+.address-link {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Roboto" , sans-serif;
+}
+
+.address-link:hover {
+    color: var(--color-primary-light);
+}
+
+/* Privacy policy */
+.private-policy {
+    color: var(--color-primary-white);
+    text-decoration: none; 
+    font-size: 16px;
+    font-family: sans-serif, 'Roboto';
+
+}
+
+.icon {
+    color: var(--color-secondary-dark);
+    font-size: 13px;
+    font-family: sans-serif, 'Roboto';
+}
